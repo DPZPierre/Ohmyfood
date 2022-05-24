@@ -93,7 +93,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   background-color: white;
   margin-bottom: 15px;
   -webkit-box-pack: justify;
@@ -104,6 +103,13 @@
   -webkit-box-shadow: 0px 5px 10px rgba(172, 172, 172, 0.515);
           box-shadow: 0px 5px 10px rgba(172, 172, 172, 0.515);
   overflow: hidden;
+  max-width: 100%;
+}
+
+.meal__header {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .meal__title {
@@ -116,6 +122,9 @@
   margin: 5px;
   font-size: 18px;
   padding: 10px 0 0 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .meal__ingredient {
@@ -124,6 +133,9 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 0 10px 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .meal__price {
@@ -137,13 +149,13 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 0 10px 15px 0;
+  padding: 0 30px 15px 0;
   margin-left: auto;
 }
 
 .meal__check {
-  width: 90px;
-  background-color: white;
+  width: 100px;
+  background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -154,12 +166,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: -80px;
+  margin-right: -100px;
 }
 
-.meal__check:hover {
+.meal:hover .meal__check {
   margin-right: 0;
-  background-color: #99E2D0;
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
