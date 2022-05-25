@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-.loading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.loader {
+  position: fixed;
+  background-color: #9256dc;
+  height: 100vh;
+  width: 100%;
+  line-height: 100vh;
+  text-align: center;
+  color: #FFF;
+  font-size: 50px;
   -webkit-animation-name: off;
           animation-name: off;
   -webkit-animation-duration: 5s;
@@ -15,26 +17,37 @@
           animation-delay: 2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  z-index: 1000;
 }
 
-.loading__spinner {
-  width: 30px;
-  height: 30px;
-  margin: 10px;
-  -webkit-animation: spin 3s linear 3s;
-          animation: spin 3s linear 3s;
+.spinner {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.loading__spinner--1 {
-  background-color: #9256dc;
+.spinner__quarter {
+  position: relative;
+  border-radius: 50px;
+  border: 8px solid rgba(255, 121, 218, 0.4);
+  margin-right: 40px;
 }
 
-.loading__spinner--2 {
-  background-color: #FF79DA;
-}
-
-.loading__spinner--3 {
-  background-color: #99E2D0;
+.spinner__quarter:after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  bottom: -8px;
+  right: -8px;
+  border-top: 8px solid #FF79DA;
+  border-radius: 50px;
+  border: 8px solid transparent;
+  border-top-color: #FF79DA;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
 }
 
 @-webkit-keyframes spin {
@@ -115,6 +128,7 @@ h3 {
 body {
   font-family: "Roboto", serif, sans-serif;
   margin: 0;
+  z-index: 1;
 }
 
 .location {
@@ -124,6 +138,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 15px;
   background: -webkit-gradient(linear, left top, left bottom, from(#d7d5d5), color-stop(10%, #ececec));
   background: linear-gradient(to bottom, #d7d5d5 0%, #ececec 10%);
@@ -131,7 +148,13 @@ body {
 }
 
 .location__icon {
-  padding-right: 20px;
+  padding: 0 20px 0 50px;
+}
+
+.search {
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
 }
 
 .book {

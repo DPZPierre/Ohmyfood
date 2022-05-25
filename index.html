@@ -11,12 +11,17 @@
 </head>
 <body>
     <!-- LOADER -->
+
+        <div class="loader">
+            <div class="spinner spinner__quarter"></div>
+            Chargement...
+        </div>
   
-        <div class="loading">
+        <!-- <div class="loading">
             <div class="loading__spinner loading__spinner--1"></div>
             <div class="loading__spinner loading__spinner--2"></div>
             <div class="loading__spinner loading__spinner--3"></div>
-        </div>
+        </div> -->
 
     <div id="main__container">
         <header>
@@ -24,12 +29,17 @@
         </header>
         <main>
             <div class="location">
-                <i class="fa-solid fa-location-dot location__icon"></i>
-                    <span class="location__text">Paris, Belleville</span>
-                    <!-- <input type="search" class="location__adress" value="Belleville, Paris" /> -->
+              
+                <form method="GET" action="#" class="place">
+                    <i class="fa-solid fa-location-dot location__icon"></i>
+                    <input type="search" class="search" placeholder="Belleville, Paris" />
+                </form>
+                <!-- <i class="fa-solid fa-location-dot location__icon"></i>
+                    <span class="location__text">Paris, Belleville</span> -->
+                    
             </div>
             <section class="book">
-                    <h2 class="book__title">Réservez le menu qui <br>  vous convient</h2>
+                    <h2 class="book__title">Réservez le menu qui vous convient</h2>
                         <p class="book__description">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
                             <button type="submit" class="book__button">
                                 <span>Explorer nos restaurants</span>
