@@ -1,0 +1,61 @@
+// MEAL BAR
+.progress {
+    height: 5px;
+    width: 50px;
+    margin: 0 0 20px 5px;
+    border: 1px solid transparent;
+    
+  }
+  
+  .progress__bar {
+    height: 5px;
+    background-color: #99E2D0;
+  }
+  
+  h3:hover + .progress > .progress__bar {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  
+  .progress__bar {
+    -webkit-transform-origin: left 50%;
+            transform-origin: left 50%;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: 100ms;
+    transition: 100ms;
+  }
+
+// MEAL DELAY
+.delay{
+    &--0{
+        animation-delay: 100ms;
+    }
+    &--1{
+        animation-delay: 200ms;
+    }
+    &--2{
+        animation-delay: 300ms;
+    }
+    &--2b{
+        animation-delay: 375ms;
+    }
+    &--3{
+        animation-delay: 400ms;
+    }
+    &--4{
+        animation-delay: 500ms;
+    }
+    &--5{
+        animation-delay: 600ms;
+    }
+    &--6{
+        animation-delay: 700ms;
+    }
+    &--7{
+        animation-delay: 800ms;
+    }
+    &--8{
+        animation-delay: 900ms;
+    }
+}

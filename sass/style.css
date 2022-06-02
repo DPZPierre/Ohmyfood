@@ -83,6 +83,7 @@
   to {
     opacity: 0;
     height: 0px;
+    line-height: 0vh;
   }
 }
 
@@ -93,6 +94,7 @@
   to {
     opacity: 0;
     height: 0px;
+    line-height: 0vh;
   }
 }
 
@@ -128,7 +130,6 @@ h3 {
 body {
   font-family: "Roboto", serif, sans-serif;
   margin: 0;
-  z-index: 1;
 }
 
 .location {
@@ -208,7 +209,7 @@ body {
 
 .instruction {
   text-align: left;
-  width: 96%;
+  width: 100%;
 }
 
 .instruction__container {
@@ -230,7 +231,7 @@ body {
   -webkit-box-shadow: 0px 5px 10px rgba(172, 172, 172, 0.515);
           box-shadow: 0px 5px 10px rgba(172, 172, 172, 0.515);
   border-radius: 25px;
-  margin-bottom: 15px;
+  margin: 0 15px 15px 0;
   cursor: pointer;
 }
 
@@ -437,6 +438,9 @@ body {
   .location {
     padding: 40px;
   }
+  .instruction__container {
+    margin-bottom: 30px;
+  }
   .instructions {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -494,6 +498,20 @@ body {
             justify-content: space-between;
     padding: 0 0 25px 0;
     margin: 0 200px;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .instruction__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .instructions {
+    margin-top: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
