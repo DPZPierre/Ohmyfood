@@ -1,0 +1,12 @@
+.book__button{
+    @include mixin-btn;
+    @include box-shadow;
+    margin-bottom: 50px;
+    transition: all 300ms;
+
+    &:hover{
+        transition-delay: 0, 150ms;
+        @include box-shadow-darker;
+        opacity: 0.9;
+    }
+}
