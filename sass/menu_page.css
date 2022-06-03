@@ -417,14 +417,17 @@ h3:hover + .progress > .progress__bar {
   }
 }
 
-@media only screen and (max-width: 991px) and (min-width: 768px) {
+@media only screen and (max-width: 992px) and (min-width: 768px) {
   .menu__header {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
   .menu__title {
     font-size: 34px;
-    margin-right: 10%;
+    margin-left: 30px;
+  }
+  .menu__btn {
+    top: 8px;
   }
   .menus__title {
     display: -webkit-box;
@@ -433,6 +436,7 @@ h3:hover + .progress > .progress__bar {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 10px;
   }
   .progress {
     height: 5px;
