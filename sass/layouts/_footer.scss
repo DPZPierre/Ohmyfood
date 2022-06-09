@@ -1,18 +1,27 @@
+// FOOTER
 .footer{
-    justify-content: center;
-    &__container{
-        width: 100%;
+    background-color: rgb(70, 69, 69);
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    &__logo{
+        font-family: "Shrikhand", sans-serif;
+        font-size: 20px;
+        height: auto;
+        padding:10px 0 20px 40px;
+        color: #FFF;
     }
-        &__logo{
-            font-size: 26px;
-            text-align: center;
-            padding-bottom: 40px;
+        &__lists{
+            list-style: none;
+            padding-bottom: 25px;
         }
-            &__lists{
-                display: flex;
-                justify-content: space-between;
-                padding:0 0 25px 0;
-                margin: 0 200px;
+            &__list{
+                margin-bottom: 10px;
             }
-  
+                &__link{
+                   color: white;
+                }
+                    &__icon{
+                        padding-right: 10px;
+                    }
 }

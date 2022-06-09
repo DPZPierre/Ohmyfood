@@ -56,7 +56,7 @@
   font-size: 30px;
   position: relative;
   cursor: pointer;
-  width: 100px;
+  padding-left: 50px;
 }
 
 .menu__btn:hover .menu__like {
@@ -415,6 +415,12 @@ h3:hover + .progress > .progress__bar {
     text-overflow: ellipsis;
     overflow: hidden;
   }
+}
+
+.order {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media only screen and (max-width: 992px) and (min-width: 768px) {

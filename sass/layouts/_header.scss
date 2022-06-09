@@ -6,3 +6,19 @@
     text-align: center;
     margin: 25px 0 25px 0;
 }
+
+// HEADER MENUPAGE
+.main__title{
+    font-family: "Shrikhand", sans-serif;
+    font-size: 30px;
+    height: auto;
+    text-align: center;
+}
+
+.fa-arrow-left-long{
+    position: absolute;
+    top:35px;
+    left: 40px;
+    cursor: pointer;
+    transform: scale(1.5);
+}

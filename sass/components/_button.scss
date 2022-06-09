@@ -1,3 +1,4 @@
+//BOOK BUTTON HOMEPAGE
 .book__button{
     @include mixin-btn;
     @include box-shadow;
@@ -9,4 +10,25 @@
         @include box-shadow-darker;
         opacity: 0.9;
     }
+}
+
+
+// ORDER BTN MENUPAGE
+.order{
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+    &__button{
+        @include mixin-btn;
+        @include box-shadow;
+        margin: 40px 0 80px 0;
+        &:hover{
+           @include box-shadow-darker;
+           opacity: 0.9;
+        }
+    }
+            &__text{
+            padding: 20px 30px;
+            }
+
 }
