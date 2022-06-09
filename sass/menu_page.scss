@@ -266,33 +266,7 @@ h3:hover + .progress > .progress__bar {
 
 }
 
-// FOOTER
 
-.footer{
-    background-color: rgb(70, 69, 69);
-    display: flex;
-    flex-basis: 100%;
-    align-items: center;
-    &__logo{
-        font-family: "Shrikhand", sans-serif;
-        font-size: 20px;
-        height: auto;
-        padding:10px 0 20px 40px;
-    }
-        &__lists{
-            list-style: none;
-            padding-bottom: 25px;
-        }
-            &__list{
-                margin-bottom: 10px;
-            }
-                &__link{
-                   color: white;
-                }
-                    &__icon{
-                        padding-right: 10px;
-                    }
-}
 
 
 @media only screen and (min-width:992px){

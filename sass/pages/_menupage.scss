@@ -21,12 +21,12 @@
     
 }
 
-.menu__header{
+.menu__container__header{
     display: flex;
     justify-content: space-between;
 }
 
-.menu__title{
+.menu__container__header__title{
     font-family: "Shrikhand", sans-serif;
     font-size: 30px;
     padding: 5px ;  
@@ -40,20 +40,20 @@
     cursor: pointer;
     width: 100px;
     &:hover{
-        .menu__like{
+        .menu__btn__heart__like{
             opacity: 1;
         }
     }
 }
-.fa-heart{
+.menu__btn__heart, .menu__btn__heart__like{
         position: absolute;
-        // top: 32px;
-        // right: 25px;
+        top: 32px;
+        right: 25px;
         align-items: center;
         justify-content: flex-end;    
     }
 
-.menu__like{
+.menu__btn__heart__like{
     opacity: 0;
     background-image: linear-gradient((175deg,$color-secondary, $color-primary));
     background-clip: text;
@@ -96,7 +96,7 @@
         overflow: hidden;
         text-overflow: ellipsis;     
     }
-       &__name{
+       &__header__name{
             margin: 5px;
             font-size: 18px;
             padding: 10px 0 0 10px;
@@ -104,7 +104,7 @@
             text-overflow: ellipsis;
             overflow: hidden;
         }
-            &__ingredient{
+            &__header__name__ingredient{
                 margin: 5px;
                 justify-content: space-between;
                 padding: 0 0 10px 10px;
@@ -161,22 +161,19 @@
   .progress__bar {
     height: 5px;
     background-color: #99E2D0;
-  }
+    -webkit-transform-origin: left 50%;
+    transform-origin: left 50%;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: 100ms;
+    transition: 100ms;
+}
   
   h3:hover + .progress > .progress__bar {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
   }
   
-  .progress__bar {
-    -webkit-transform-origin: left 50%;
-            transform-origin: left 50%;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-    -webkit-transition: 100ms;
-    transition: 100ms;
-  }
-
 // MEAL DELAY
 .delay{
     &--0{
@@ -213,11 +210,11 @@
 
 @media only screen and (max-width:992px) and (min-width:768px){
 
-    .menu__header{
+    .menu__container__header{
         justify-content: space-around;
        
     }  
-    .menu__title{
+    .menu__container__header__title{
         font-size: 34px;
         margin-left: 30px;
     }
@@ -269,3 +266,51 @@
       width: 70%;
   }
 }
+
+@media only screen and (min-width:992px){
+ 
+    .menu__header{
+        justify-content: center;
+    }  
+    .menu__title{
+        font-size: 34px;
+        margin-right: 10%;
+    }  
+    
+    .menu__btn{
+        top: 8px;
+    }
+    
+    .menus{
+        flex-basis: 31%;
+        max-width: 31%;
+    }
+    .menus__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 100px;
+    }
+    
+    
+    
+    .meal__header{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;  
+            &__header__name{
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            &__header__name__ingredient{
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }   
+        }
+    }
+    
+    .order{
+        justify-content: center;
+    }

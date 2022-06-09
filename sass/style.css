@@ -266,7 +266,7 @@ body {
   padding: 30px 10px 0;
 }
 
-.book__description {
+.book__title__description {
   font-size: 20px;
   text-align: center;
   padding: 0 10px 0;
@@ -310,7 +310,7 @@ body {
   margin-bottom: 50px;
 }
 
-.instruction__title {
+.instruction__container__title {
   margin: 40px 0 20px 25px;
 }
 
@@ -569,29 +569,6 @@ body {
   .restaurants__cards {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
-  }
-  .footer {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .footer__container {
-    width: 100%;
-  }
-  .footer__logo {
-    font-size: 26px;
-    text-align: center;
-    padding-bottom: 40px;
-  }
-  .footer__lists {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 0 0 25px 0;
-    margin: 0 200px;
   }
 }
 

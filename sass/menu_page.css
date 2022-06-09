@@ -334,42 +334,6 @@ h3:hover + .progress > .progress__bar {
   padding: 20px 30px;
 }
 
-.footer {
-  background-color: #464545;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footer__logo {
-  font-family: "Shrikhand", sans-serif;
-  font-size: 20px;
-  height: auto;
-  padding: 10px 0 20px 40px;
-}
-
-.footer__lists {
-  list-style: none;
-  padding-bottom: 25px;
-}
-
-.footer__list {
-  margin-bottom: 10px;
-}
-
-.footer__link {
-  color: white;
-}
-
-.footer__icon {
-  padding-right: 10px;
-}
-
 @media only screen and (min-width: 992px) {
   .menu__header {
     -webkit-box-pack: center;

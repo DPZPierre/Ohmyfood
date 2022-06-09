@@ -114,6 +114,12 @@ h3 {
   padding: 0 20px 0 50px;
 }
 
+.place {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .book {
   background-color: rgba(243, 241, 241, 0.86);
   text-align: center;
@@ -146,7 +152,7 @@ h3 {
   margin-bottom: 50px;
 }
 
-.instruction__title {
+.instruction__container__title {
   margin: 40px 0 20px 25px;
 }
 
@@ -228,7 +234,7 @@ h3 {
       flex-basis: 80%;
 }
 
-.restaurants__card {
+.restaurants__cards__card {
   border: 1px solid transparent;
   margin: 15px;
   border-radius: 15px;
@@ -252,18 +258,7 @@ h3 {
      object-fit: cover;
 }
 
-.restaurants__body {
-  text-decoration: none;
-  padding: 15px;
-  position: relative;
-  overflow: hidden;
-}
-
-.restaurants__place {
-  padding-top: 5px;
-}
-
-.restaurants__new {
+.restaurants__image__new {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -278,7 +273,18 @@ h3 {
   color: #278870;
 }
 
-.restaurants__btn {
+.restaurants__body {
+  text-decoration: none;
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.restaurants__body__place {
+  padding-top: 5px;
+}
+
+.restaurants__body__place__btn {
   border: transparent;
   background-color: white;
   margin: 0;
@@ -290,28 +296,15 @@ h3 {
   cursor: pointer;
 }
 
-.restaurants__btn:hover .restaurants__like {
+.restaurants__body__place__btn:hover .restaurants__body__place__btn__like {
   opacity: 1;
-}
-
-.restaurants__btn__like {
-  opacity: 0;
-  background-image: linear-gradient(175deg, #FF79DA, #9256dc);
-  color: transparent;
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
 }
 
 .fa-heart {
   position: absolute;
 }
 
-.restaurants__like {
+.restaurants__body__place__btn__like {
   opacity: 0;
   background-image: linear-gradient(175deg, #FF79DA, #9256dc);
   color: transparent;
@@ -324,6 +317,76 @@ h3 {
           transform: scale(1.2);
 }
 
+@media only screen and (min-width: 992px) {
+  #main__title {
+    font-size: 40px;
+  }
+  .location {
+    padding: 40px;
+  }
+  .instruction__container {
+    margin-bottom: 30px;
+  }
+  .instructions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: relative;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-right: 20px;
+  }
+  .instructions__steps {
+    width: 23%;
+  }
+  .restaurants {
+    background-color: white;
+  }
+  .restaurants__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .restaurants__cards {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__container {
+    width: 100%;
+  }
+  .footer__logo {
+    font-size: 26px;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  .footer__lists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 0 25px 0;
+    margin: 0 200px;
+  }
+}
+
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .instruction__container {
     display: -webkit-box;
@@ -333,7 +396,7 @@ h3 {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .instruction__title {
+  .instruction__container__title {
     text-align: center;
   }
   .instructions {
@@ -365,7 +428,7 @@ h3 {
     font-size: 16px;
   }
   .location__icon {
-    padding: 0 10px 0 40px;
+    padding: 0 30px 0 50px;
   }
 }
 
@@ -388,7 +451,7 @@ h3 {
   z-index: 1;
 }
 
-.menu__header {
+.menu__container__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,7 +460,7 @@ h3 {
           justify-content: space-between;
 }
 
-.menu__title {
+.menu__container__header__title {
   font-family: "Shrikhand", sans-serif;
   font-size: 30px;
   padding: 5px;
@@ -412,12 +475,14 @@ h3 {
   width: 100px;
 }
 
-.menu__btn:hover .menu__like {
+.menu__btn:hover .menu__btn__heart__like {
   opacity: 1;
 }
 
-.fa-heart {
+.menu__btn__heart, .menu__btn__heart__like {
   position: absolute;
+  top: 32px;
+  right: 25px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -426,7 +491,7 @@ h3 {
           justify-content: flex-end;
 }
 
-.menu__like {
+.menu__btn__heart__like {
   opacity: 0;
   background-image: linear-gradient(175deg, #FF79DA, #9256dc);
   background-clip: text;
@@ -478,7 +543,7 @@ h3 {
   text-overflow: ellipsis;
 }
 
-.meal__name {
+.meal__header__name {
   margin: 5px;
   font-size: 18px;
   padding: 10px 0 0 10px;
@@ -487,7 +552,7 @@ h3 {
   overflow: hidden;
 }
 
-.meal__ingredient {
+.meal__header__name__ingredient {
   margin: 5px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -562,20 +627,17 @@ h3 {
 .progress__bar {
   height: 5px;
   background-color: #99E2D0;
-}
-
-h3:hover + .progress > .progress__bar {
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-.progress__bar {
   -webkit-transform-origin: left 50%;
   transform-origin: left 50%;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transition: 100ms;
   transition: 100ms;
+}
+
+h3:hover + .progress > .progress__bar {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .delay--0 {
@@ -629,11 +691,11 @@ h3:hover + .progress > .progress__bar {
 }
 
 @media only screen and (max-width: 992px) and (min-width: 768px) {
-  .menu__header {
+  .menu__container__header {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .menu__title {
+  .menu__container__header__title {
     font-size: 34px;
     margin-left: 30px;
   }
@@ -687,6 +749,59 @@ h3:hover + .progress > .progress__bar {
   .meal {
     width: 70%;
   }
+}
+
+@media only screen and (min-width: 992px) {
+  .menu__header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menu__title {
+    font-size: 34px;
+    margin-right: 10%;
+  }
+  .menu__btn {
+    top: 8px;
+  }
+  .menus {
+    -ms-flex-preferred-size: 31%;
+        flex-basis: 31%;
+    max-width: 31%;
+  }
+  .menus__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 100px;
+  }
+  .meal__header {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .meal__header__header__name {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .meal__header__header__name__ingredient {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+
+.order {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .loader {
@@ -798,16 +913,42 @@ h3:hover + .progress > .progress__bar {
   padding-bottom: 25px;
 }
 
-.footer__list {
+.footer__lists__list {
   margin-bottom: 10px;
 }
 
-.footer__link {
+.footer__lists__list__link {
   color: white;
 }
 
 .footer__icon {
   padding-right: 10px;
+}
+
+@media only screen and (min-width: 992px) {
+  .footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__container {
+    width: 100%;
+  }
+  .footer__logo {
+    font-size: 26px;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  .footer__lists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 0 25px 0;
+    margin: 0 200px;
+  }
 }
 
 .search {
@@ -816,7 +957,7 @@ h3:hover + .progress > .progress__bar {
   font-size: 18px;
 }
 
-.book__button {
+.book__title__description__button {
   border: 0;
   padding: 15px 30px;
   font-size: 16px;
@@ -833,7 +974,7 @@ h3:hover + .progress > .progress__bar {
   transition: all 300ms;
 }
 
-.book__button:hover {
+.book__title__description__button:hover {
   -webkit-transition-delay: 0, 150ms;
           transition-delay: 0, 150ms;
   -webkit-box-shadow: 0px 8px 10px rgba(172, 172, 172, 0.9);
