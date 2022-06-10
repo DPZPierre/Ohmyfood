@@ -6,7 +6,7 @@
     transition: all 300ms;
 
     &:hover{
-        transition-delay: 0, 150ms;
+        transition-delay: 1ms, 150ms;
         @include box-shadow-darker;
         opacity: 0.9;
     }
@@ -31,4 +31,46 @@
             padding: 20px 30px;
             }
 
+}
+
+
+// MENU BTN
+.menu__btn{
+    border: transparent;
+    background-color: #f5f5f5;
+    font-size: 30px;
+    position: relative;
+    cursor: pointer;
+    width: 100px;
+    &:hover{
+        .menu__btn__heart__like{
+            opacity: 1;
+        }
+    }
+}
+.menu__btn__heart, .menu__btn__heart__like{
+        position: absolute;
+        top: 32px;
+        right: 25px;
+        align-items: center;
+        justify-content: flex-end;    
+    }
+
+.menu__btn__heart__like{
+    opacity: 0;
+    background-image: linear-gradient((175deg,$color-secondary, $color-primary));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+    transition: all 450ms ease-in-out;
+    transform: scale(1.2);
+ 
+}
+
+@media only screen and (min-width:992px){
+    
+    .order{
+        justify-content: center;
+    }
 }
