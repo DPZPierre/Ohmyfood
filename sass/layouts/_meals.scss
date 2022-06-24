@@ -15,8 +15,14 @@
     &__header{
         white-space: nowrap;
         overflow: hidden;
-        text-overflow: ellipsis;     
+        text-overflow: ellipsis;
+        @media only screen and (min-width:992px){    
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;   
+        }   
     }
+
        &__header__name{
             margin: 5px;
             font-size: 18px;
@@ -24,6 +30,11 @@
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
+            @media only screen and (min-width:992px){    
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;   
+        }
         }
             &__header__name__ingredient{
                 margin: 5px;
@@ -32,6 +43,11 @@
                 white-space: nowrap;
                 text-overflow: ellipsis;
                 overflow: hidden;
+                @media only screen and (min-width:992px){    
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;   
+            }
             }
                 &__price{
                     font-weight: bold;
@@ -119,25 +135,25 @@
    }
  }
  
- @media only screen and (min-width:992px){
+//  @media only screen and (min-width:992px){
 
      
-     .meal__header{
-             white-space: nowrap;
-             overflow: hidden;
-             text-overflow: ellipsis;  
-             &__header__name{
-                 white-space: nowrap;
-                 text-overflow: ellipsis;
-                 overflow: hidden;
-             }
-             &__header__name__ingredient{
-                     white-space: nowrap;
-                     text-overflow: ellipsis;
-                     overflow: hidden;
-                 }   
-         }
-     }
+//      .meal__header{
+//              white-space: nowrap;
+//              overflow: hidden;
+//              text-overflow: ellipsis;  
+//              &__header__name{
+//                  white-space: nowrap;
+//                  text-overflow: ellipsis;
+//                  overflow: hidden;
+//              }
+//              &__header__name__ingredient{
+//                      white-space: nowrap;
+//                      text-overflow: ellipsis;
+//                      overflow: hidden;
+//                  }   
+//          }
+//      }
      
      
      

@@ -10,11 +10,20 @@
 // SECTION MENUS
 .menus{
     background-color: #f5f5f5;
+    @media only screen and (min-width:992px){
+          flex-basis: 31%;
+          max-width: 31%;    
+  }
      &__title{
         padding: 30px 0 5px 5px;
         font-size: 20px;
         font-weight: 300;
+        @media only screen and (max-width:992px) and (min-width:768px){
+           display: flex;
+           justify-content: center;
+           margin-bottom: 10px;
     }
+}
 }
 
 
@@ -24,7 +33,13 @@
     width: 50px;
     margin: 0 0 20px 5px;
     border: 1px solid transparent; 
+    @media only screen and (max-width:992px) and (min-width:768px){
+    height: 5px;
+    width: 70%;
+    margin:auto;
+    border: 1px solid transparent; 
   }
+}
   
   .progress__bar {
     height: 5px;
@@ -46,11 +61,11 @@
 
 @media only screen and (max-width:992px) and (min-width:768px){
  
-   .menus__title{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-    }
+  //  .menus__title{
+  //   display: flex;
+  //   justify-content: center;
+  //   margin-bottom: 10px;
+  //   }
 
    .progress {
     height: 5px;
@@ -80,11 +95,4 @@
 
 }
 
-@media only screen and (min-width:992px){
 
-    .menus{
-        flex-basis: 31%;
-        max-width: 31%;
-    }
-   
-}

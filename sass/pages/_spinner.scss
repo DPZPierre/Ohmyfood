@@ -15,7 +15,6 @@
     z-index: 1000;
 }
 
-
 .spinner{
     position: relative;
     width: 50px;
@@ -43,5 +42,4 @@
     border: 8px solid transparent;
     border-top-color: $color-secondary;
     animation: spin 2s linear infinite;
-
 }
