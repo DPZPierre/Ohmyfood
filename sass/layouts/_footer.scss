@@ -4,16 +4,30 @@
     display: flex;
     flex-basis: 100%;
     align-items: center;
+    @media only screen and (min-width:992px){
+        justify-content: center;
+    }
     &__logo{
         font-family: "Shrikhand", sans-serif;
         font-size: 20px;
         height: auto;
         padding:10px 0 20px 40px;
         color: #FFF;
+        @media only screen and (min-width:992px){
+            font-size: 26px;
+            text-align: center;
+            padding-bottom: 40px;
+        }
     }
         &__lists{
             list-style: none;
             padding-bottom: 25px;
+            @media only screen and (min-width:992px){
+                    display: flex;
+                    justify-content: space-between;
+                    padding:0 0 25px 0;
+                    margin: 0 200px;
+            }
         }
             &__lists__list{
                 margin-bottom: 10px;
@@ -28,24 +42,8 @@
 
 
 @media only screen and (min-width:992px){
-
-    .footer{
-        justify-content: center;
-        &__container{
-            width: 100%;
-        }
-            &__logo{
-                font-size: 26px;
-                text-align: center;
-                padding-bottom: 40px;
-            }
-                &__lists{
-                    display: flex;
-                    justify-content: space-between;
-                    padding:0 0 25px 0;
-                    margin: 0 200px;
-                }
-      
+    .footer__container{
+        width: 100%;
     }
-       
 }
+       

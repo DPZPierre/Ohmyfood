@@ -34,10 +34,10 @@
     margin: 0 0 20px 5px;
     border: 1px solid transparent; 
     @media only screen and (max-width:992px) and (min-width:768px){
-    height: 5px;
-    width: 70%;
-    margin:auto;
-    border: 1px solid transparent; 
+      height: 5px;
+      width: 70%;
+      margin:auto;
+      border: 1px solid transparent; 
   }
 }
   
@@ -50,49 +50,26 @@
     transform: scaleX(0);
     -webkit-transition: 100ms;
     transition: 100ms;
+    @media only screen and (max-width:992px) and (min-width:768px){
+      height: 5px;
+      background-color: #99E2D0;
+      -webkit-transform-origin: left 50%;
+      transform-origin: left 50%;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: 400ms;
+      transition: 400ms;
+    }
 }
   
   h3:hover + .progress > .progress__bar {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
+  @media only screen and (max-width:992px) and (min-width:768px){
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+    }      
   }
   
-
-
-@media only screen and (max-width:992px) and (min-width:768px){
- 
-  //  .menus__title{
-  //   display: flex;
-  //   justify-content: center;
-  //   margin-bottom: 10px;
-  //   }
-
-   .progress {
-    height: 5px;
-    width: 70%;
-    margin:auto;
-    border: 1px solid transparent; 
-  }
-
-  .progress__bar {
-    height: 5px;
-    background-color: #99E2D0;
-  }
-  
-  h3:hover + .progress > .progress__bar {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
-  
-  .progress__bar {
-    -webkit-transform-origin: left 50%;
-            transform-origin: left 50%;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-    -webkit-transition: 400ms;
-    transition: 400ms;
-  }
-
-}
 
 

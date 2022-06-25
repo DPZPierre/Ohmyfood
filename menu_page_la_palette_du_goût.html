@@ -1,187 +1,207 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./sass/main.css">
-    <script src="https://kit.fontawesome.com/b77ad56624.js" crossorigin="anonymous"></script>
-    <title>Ohmyfood</title>
-</head>
-<body>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./sass/main.css" />
+      <script src="https://kit.fontawesome.com/b77ad56624.js" crossorigin="anonymous"></script>
+      <title>Ohmyfood</title>
+    </head>
+  <body>
     <div class="main__container">
-        <header>
-            <a href="index.html"><i class="fa-solid fa-arrow-left-long"></i></a>
-            <h1 id="main__title__menu">ohmyfood</h1>   
-        </header>
-        <img class="menu__image" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'une assiette du restaurant">
-        <main>    
-            <!--RESTAURANT HEADER  -->
-            <div class="menu__container">
-                <div class="menu__container__header">
-                    <h2 class="menu__container__header__title">La palette du goût</h2>
-                    <button class="menu__btn">
-                        <i class="fa-regular fa-heart menu__btn__heart"></i>
-                        <i class="fa-solid fa-heart menu__btn__heart__like"></i>
-                    </button>   
+      <header>
+        <a href="index.html"><i class="fa-solid fa-arrow-left-long"></i></a>
+        <h1 id="main__title__menu">ohmyfood</h1>
+      </header>
+      <img class="menu__image" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'une assiette du restaurant"/>
+      <main>
+        <!--RESTAURANT HEADER  -->
+        <div class="menu__container">
+          <div class="menu__container__header">
+            <h2 class="menu__container__header__title">La palette du goût</h2>
+            <button class="menu__btn">
+              <i class="fa-regular fa-heart menu__btn__heart"></i>
+              <i class="fa-solid fa-heart menu__btn__heart__like"></i>
+            </button>
+          </div>
+          <!-- STARTERS -->
+          <div class="menus__container">
+            <section class="menus">
+              <h3 class="menus__title">ENTRÉES</h3>
+              <div class="progress">
+                <div class="progress__bar"></div>
+              </div>
+              <div class="meal__starters">
+                <div class="meal delay--0">
+                  <div class="meal__header">
+                    <h4 class="meal__header__name">Fricassée d'escargots</h4>
+                    <p class="meal__header__name__ingredient">
+                      Au piment d'espelette
+                    </p>
+                  </div>
+                  <div class="meal__price">25€</div>
+                  <div class="meal__check">
+                    <i class="meal__check__circle fa-solid fa-circle-check"></i>
+                  </div>
                 </div>
-                <!-- STARTERS -->
-                <div class="menus__container">
-                    <section class="menus">
-                        <h3 class="menus__title">ENTRÉES</h3>
-                            <div class="progress">
-                                <div class="progress__bar"></div>
-                            </div>                    
-                            <div class="meal__starters">
-                                <div class="meal delay--0">
-                                        <div class="meal__header">
-                                            <h4 class="meal__header__name">Fricassée d'escargots</h4>
-                                            <p class="meal__header__name__ingredient">Au piment d'espelette</p>
-                                        </div>
-                                        <div class="meal__price">25€</div>
-                                        <div class="meal__check">
-                                            <i class="meal__check__circle fa-solid fa-circle-check"></i>   
-                                        </div>                                                                   
-                                </div>
-                                <div class="meal delay--1">
-                                    <div class="meal__header">
-                                        <h4 class="meal__header__name">Foie gras de canard mi-cuit</h4>
-                                        <p class="meal__header__name__ingredient">Et ses copeaux de truffe noire</p>
-                                    </div>         
-                                    <span class="meal__price">35€</span>
-                                    <div class="meal__check">
-                                        <i class="meal__check__circle fa-solid fa-circle-check"></i>
-                                    </div> 
-                                </div>
-                                <div class="meal delay--2">
-                                    <div class="meal__header">
-                                        <h4 class="meal__header__name">Oeuf au plat</h4>
-                                        <p class="meal__header__name__ingredient">Assaisonné à la truffe sur lit de champignons</p>
-                                    </div>  
-                                    <span class="meal__price">20€</span>
-                                    <div class="meal__check">
-                                        <i class="meal__check__circle fa-solid fa-circle-check"></i>
-                                    </div>  
-                                </div>
-                            </div>
-                    </section>
-                    <section class="menus">
-                        <h3 class="menus__title">PLATS</h3>
-                        <div class="progress">
-                            <div class="progress__bar"></div>
-                        </div>
-                        <div class="meal__mainDish">
-                            <div class="meal delay--3">
-                                <div class="meal__header">
-                                    <h4 class="meal__header__name">Filet de boeuf aux herbes</h4>
-                                    <p class="meal__header__name__ingredient">Accompagné de sa ribambelle de légumes</p>
-                                </div>   
-                                <div class="meal__price">
-                                    <span>40€</span>
-                                </div> 
-                                <div class="meal__check">
-                                    <i class="meal__check__circle fa-solid fa-circle-check"></i>                               
-                                </div>           
-                            </div>
-                            <div class="meal delay--4">
-                                <div class="meal__header">
-                                    <h4 class="meal__header__name">Parmentier de queue de boeuf</h4>
-                                    <p class="meal__header__name__ingredient">À la truffe noire sur sa purée de panais</p>
-                                </div>   
-                                <div class="meal__price">
-                                    <span>35€</span>
-                                </div> 
-                                <div class="meal__check">
-                                    <i class="meal__check__circle fa-solid fa-circle-check"></i>
-                                </div>           
-                            </div>
-                            <div class="meal delay--5">
-                                <div class="meal__header">
-                                    <h4 class="meal__header__name">Filet de Turbot</h4>
-                                    <p class="meal__header__name__ingredient">Aux agrumes</p>
-                                </div>   
-                                <div class="meal__price">
-                                    <span>44€</span>
-                                </div> 
-                                <div class="meal__check">
-                                    <i class="meal__check__circle fa-solid fa-circle-check"></i>
-                                </div>           
-                            </div>
-                        </div>
-                    </section>  
-                    <section class="menus">
-                        <h3 class="menus__title">DESSERTS</h3>
-                        <div class="progress">
-                            <div class="progress__bar"></div>
-                        </div>
-                        <div class="meal__dessert">
-                            <div class="meal delay--6">
-                                <div class="meal__header">
-                                    <h4 class="meal__header__name">Paris-Brest</h4>
-                                    <p class="meal__header__name__ingredient">Revisité</p>
-                                </div> 
-                                <div class="meal__price">
-                                    <span>18€</span>
-                                </div>   
-                                <div class="meal__check">
-                                    <i class="meal__check__circle fa-solid fa-circle-check"></i>
-                                </div>       
-                            </div>
-                            <div class="meal delay--7">
-                                <div class="meal__header">
-                                    <h4 class="meal__header__name">Macaron au chocolat d'exception</h4>
-                                    <p class="meal__header__name__ingredient">Et glace à la vanille de Madagascar</p>
-                                </div> 
-                                <div class="meal__price">
-                                    <span>22€</span>
-                                </div>  
-                                <div class="meal__check">
-                                    <i class="meal__check__circle fa-solid fa-circle-check"></i>
-                                </div>       
-                            </div>
-                            <div class="meal delay--8">
-                                <div class="meal__header">
-                                    <h4 class="meal__header__name">Mousse au chocolat</h4>
-                                    <p class="meal__header__name__ingredient">Au piment d'espelette et à la truffe noire</p>
-                                </div>   
-                                <div class="meal__price">
-                                    <span>23€</span>
-                                </div> 
-                                <div class="meal__check">
-                                    <i class="meal__check__circle fa-solid fa-circle-check"></i>
-                                </div>        
-                            </div>
-                        </div>   
-                    </section>
+                <div class="meal delay--1">
+                  <div class="meal__header">
+                    <h4 class="meal__header__name">
+                      Foie gras de canard mi-cuit
+                    </h4>
+                    <p class="meal__header__name__ingredient">
+                      Et ses copeaux de truffe noire
+                    </p>
+                  </div>
+                  <span class="meal__price">35€</span>
+                  <div class="meal__check">
+                    <i class="meal__check__circle fa-solid fa-circle-check"></i>
+                  </div>
                 </div>
-                <div class="order">
-                    <button type="submit" class="order__button">
-                        <span class="order__text">Commander</span>
-                    </button>
-                </div>   
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="footer__container">
-                <div class="footer__logo">
-                    ohmyfood
+                <div class="meal delay--2">
+                  <div class="meal__header">
+                    <h4 class="meal__header__name">Oeuf au plat</h4>
+                    <p class="meal__header__name__ingredient">
+                      Assaisonné à la truffe sur lit de champignons
+                    </p>
+                  </div>
+                  <span class="meal__price">20€</span>
+                  <div class="meal__check">
+                    <i class="meal__check__circle fa-solid fa-circle-check"></i>
+                  </div>
                 </div>
-                    <ul class="footer__lists">
-                        <li class="footer__lists__list">
-                            <a class="footer__lists__list__link" href="#"><i class="fa-solid fa-utensils footer__icon"></i>Proposer un restaurant</a>
-                        </li>
-                        <li class="footer__lists__list">
-                            <a class="footer__lists__list__link" href="#"><i class="fa-solid fa-handshake-angle footer__icon"></i>Devenir partenaire</a>
-                        </li>
-                        <li class="footer__lists__list">
-                            <a class="footer__lists__list__link" href="#">Mentions légales</a>
-                        </li>
-                        <li class="footer__lists__list">
-                            <a class="footer__lists__list__link" href="mailto:contact@ohmyfood.com">Contact</a>
-                        </li>
-                    </ul>
-            </div>
-        </footer>
+              </div>
+            </section>
+            <section class="menus">
+              <h3 class="menus__title">PLATS</h3>
+              <div class="progress">
+                <div class="progress__bar"></div>
+              </div>
+              <div class="meal__mainDish">
+                <div class="meal delay--3">
+                  <div class="meal__header">
+                    <h4 class="meal__header__name">
+                      Filet de boeuf aux herbes
+                    </h4>
+                    <p class="meal__header__name__ingredient">
+                      Accompagné de sa ribambelle de légumes
+                    </p>
+                  </div>
+                  <div class="meal__price">
+                    <span>40€</span>
+                  </div>
+                  <div class="meal__check">
+                    <i class="meal__check__circle fa-solid fa-circle-check"></i>
+                  </div>
+                </div>
+                <div class="meal delay--4">
+                  <div class="meal__header">
+                    <h4 class="meal__header__name">
+                      Parmentier de queue de boeuf
+                    </h4>
+                    <p class="meal__header__name__ingredient">
+                      À la truffe noire sur sa purée de panais
+                    </p>
+                  </div>
+                  <div class="meal__price">
+                    <span>35€</span>
+                  </div>
+                  <div class="meal__check">
+                    <i class="meal__check__circle fa-solid fa-circle-check"></i>
+                  </div>
+                </div>
+                <div class="meal delay--5">
+                  <div class="meal__header">
+                    <h4 class="meal__header__name">Filet de Turbot</h4>
+                    <p class="meal__header__name__ingredient">Aux agrumes</p>
+                  </div>
+                  <div class="meal__price">
+                    <span>44€</span>
+                  </div>
+                  <div class="meal__check">
+                    <i class="meal__check__circle fa-solid fa-circle-check"></i>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="menus">
+              <h3 class="menus__title">DESSERTS</h3>
+              <div class="progress">
+                <div class="progress__bar"></div>
+              </div>
+              <div class="meal__dessert">
+                <div class="meal delay--6">
+                  <div class="meal__header">
+                    <h4 class="meal__header__name">Paris-Brest</h4>
+                    <p class="meal__header__name__ingredient">Revisité</p>
+                  </div>
+                  <div class="meal__price">
+                    <span>18€</span>
+                  </div>
+                  <div class="meal__check">
+                    <i class="meal__check__circle fa-solid fa-circle-check"></i>
+                  </div>
+                </div>
+                <div class="meal delay--7">
+                  <div class="meal__header">
+                    <h4 class="meal__header__name">
+                      Macaron au chocolat d'exception
+                    </h4>
+                    <p class="meal__header__name__ingredient">
+                      Et glace à la vanille de Madagascar
+                    </p>
+                  </div>
+                  <div class="meal__price">
+                    <span>22€</span>
+                  </div>
+                  <div class="meal__check">
+                    <i class="meal__check__circle fa-solid fa-circle-check"></i>
+                  </div>
+                </div>
+                <div class="meal delay--8">
+                  <div class="meal__header">
+                    <h4 class="meal__header__name">Mousse au chocolat</h4>
+                    <p class="meal__header__name__ingredient">
+                      Au piment d'espelette et à la truffe noire
+                    </p>
+                  </div>
+                  <div class="meal__price">
+                    <span>23€</span>
+                  </div>
+                  <div class="meal__check">
+                    <i class="meal__check__circle fa-solid fa-circle-check"></i>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="order">
+            <button type="submit" class="order__button">
+              <span class="order__text">Commander</span>
+            </button>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__logo">ohmyfood</div>
+          <ul class="footer__lists">
+            <li class="footer__lists__list">
+              <a class="footer__lists__list__link" href="#"><i class="fa-solid fa-utensils footer__icon"></i>Proposer un restaurant</a>
+            </li>
+            <li class="footer__lists__list">
+              <a class="footer__lists__list__link" href="#"><i class="fa-solid fa-handshake-angle footer__icon"></i>Devenir partenaire</a>
+            </li>
+            <li class="footer__lists__list">
+              <a class="footer__lists__list__link" href="#">Mentions légales</a>
+            </li>
+            <li class="footer__lists__list">
+              <a class="footer__lists__list__link" href="mailto:contact@ohmyfood.com">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </div>
-</body>
+  </body>
 </html>

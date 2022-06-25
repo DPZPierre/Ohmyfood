@@ -15,8 +15,14 @@
     padding: 15px;
     background: linear-gradient(to bottom, $color-quinary 0% ,$color-quaternary 10%);
     font-size: 18px;
+    @media only screen and (min-width:992px){
+        padding: 40px;
+    }
         &__icon{
             padding: 0 20px 0 50px;
+            @media only screen and (max-width:350px) and (min-width:310px){
+                    padding: 0 30px 0 50px;
+            }
         }  
 }
 
@@ -43,61 +49,82 @@
           
 }
 
-// INSTRUCTIONS
-.instructions{
-    margin: 0 5px 0 30px;
-}
 
-.instruction{
+// SETTINGS
+.settings{
     text-align: left;
     width: 100%;
     &__container{
         margin-bottom: 50px;
+    @media only screen and (max-width:991px) and (min-width:768px){
+        display: flex;
+        justify-content: space-between;  
+    }
+    @media only screen and (min-width:992px){
+        margin-bottom: 30px;
+    }    
     }
     &__container__title{
         margin: 40px 0 20px 25px;
-       }
-
+    @media only screen and (max-width:991px) and (min-width:768px){
+        text-align: center;
+    }
+}
 }
 
+// INSTRUCTIONS
 .instructions {
     list-style: none;
-            &__steps{
-                position: relative;
-                padding: 20px;
-                background-color: rgba(239, 237, 237, 0.711) ;
-                @include box-shadow;
-                border-radius: 25px;
-                margin:0 15px 15px 0;
-                cursor: pointer;
-               
+    margin: 0 5px 0 30px;
+    @media only screen and (max-width:991px) and (min-width:768px){
+        margin: 40px 40px 0 0;
+    }
+    @media only screen and (min-width:992px){
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        justify-content:space-around;
+        margin-right: 20px;
+    }
+    &__steps{
+        position: relative;
+        padding: 20px;
+        background-color: rgba(239, 237, 237, 0.711) ;
+        @include box-shadow;
+        border-radius: 25px;
+        margin:0 15px 15px 0;
+        cursor: pointer;
+        @media only screen and (min-width:992px){
+                width: 23%;
+        }
+       
+    }
+        &__step{
+            position: absolute;
+            left:-10px;
+            height: 30px;
+            width: 30px;
+            background-color: $color-primary;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            justify-content: center;  
+        }
+            &__step--order{
+                position: absolute;
+                right: 11px;
+                top: 5px;
             }
-                &__step{
-                    position: absolute;
-                    left:-10px;
-                    height: 30px;
-                    width: 30px;
-                    background-color: $color-primary;
-                    color: white;
-                    border-radius: 50%;
-                    text-align: center;
-                    justify-content: center;  
+                &__icon{
+                    padding: 10px 20px;
                 }
-                    &__step--order{
-                        position: absolute;
-                        right: 11px;
-                        top: 5px;
+                    &__icon--store{
+                        padding: 10px 20px;
+                        color: $color-primary;
                     }
-                        &__icon{
-                            padding: 10px 20px;
+                        &__text{
+                            font-weight: bold;
                         }
-                            &__icon--store{
-                                padding: 10px 20px;
-                                color: $color-primary;
-                            }
-                                &__text{
-                                    font-weight: bold;
-                                }
   }
 
 
@@ -108,6 +135,12 @@
     flex-wrap: wrap;
     flex-basis: 100%;
     background-color: rgba(243, 241, 241, 0.86);
+    @media only screen and (min-width:992px){
+        background-color: white;
+    }
+        @media only screen and (max-width:991px) and (min-width:768px){
+            background-color: white;
+        }
     &__title{
         margin: 50px 0 0 30px ;
         font-size: 26px;
@@ -116,9 +149,25 @@
             justify-content: space-between;
             margin: 10px 20px 10px 20px;  
             flex-basis: 100%;
+            @media only screen and (min-width:992px){
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+            }
+            @media only screen and (max-width:991px) and (min-width:768px){
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                }
         }
             &__cards{
                 flex-basis: 80%;
+                @media only screen and (min-width:992px){
+                    flex-basis: 50%;
+                }
+                @media only screen and (max-width:991px) and (min-width:768px){
+                        flex-basis: 50%;
+                    }
             }
                 &__cards__card{
                     border: 1px solid transparent;
@@ -195,96 +244,5 @@
        position: absolute;     
 }
 
-// .restaurants__body__place__btn__like{
-//     opacity: 0;
-//     background-image: linear-gradient((175deg,$color-secondary, $color-primary));
-//     color: transparent;
-//     background-clip: text;
-//     -webkit-background-clip: text;
-//     -moz-background-clip: text;
-//     transition: all 600ms ease-in-out;
-//     transform: scale(1.2); 
-// }
 
-
-@media only screen and (min-width:992px){
-
-    .location{
-        padding: 40px;
-    }
-
-    .instruction__container{
-        margin-bottom: 30px;
-    }
-
-    .instructions{
-       display: flex;
-       flex-direction: row;
-       position: relative;
-       justify-content:space-around;
-       margin-right: 20px;
-       &__steps{
-           width: 23%;
-       }
-    }
-
-    .restaurants{
-        background-color: white;
-            &__container{
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: space-between;
-            }
-            &__cards{
-                flex-basis: 50%;
-            }
-    }
-
-    .footer{
-        justify-content: center;
-        &__container{
-            width: 100%;
-        }
-            &__logo{
-                font-size: 26px;
-                text-align: center;
-                padding-bottom: 40px;
-            }
-                &__lists{
-                    display: flex;
-                    justify-content: space-between;
-                    padding:0 0 25px 0;
-                    margin: 0 200px;
-                }
-      
-    }
-       
-}
-@media only screen and (max-width:991px) and (min-width:768px){
-
-    .instruction__container{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .instruction__container__title{
-        text-align: center;
-    }
-
-    .instructions{
-        margin: 40px 40px 0 0;
-    }
-
-    .restaurants{
-        background-color: white;
-            &__container{
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: space-between;
-            }
-            &__cards{
-                flex-basis: 50%;
-            }
-    }
-}
 

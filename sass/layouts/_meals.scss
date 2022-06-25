@@ -11,7 +11,9 @@
     animation: delay 400ms;
     animation-fill-mode: forwards;
     transform: scale(0);
-
+    @media only screen and (max-width:992px) and (min-width:768px){
+            width: 70%; 
+    }
     &__header{
         white-space: nowrap;
         overflow: hidden;
@@ -129,31 +131,8 @@
        flex-direction: column;
        margin-top: 10px;
    }
-   
-   .meal{
-       width: 70%;
-   }
  }
  
-//  @media only screen and (min-width:992px){
 
-     
-//      .meal__header{
-//              white-space: nowrap;
-//              overflow: hidden;
-//              text-overflow: ellipsis;  
-//              &__header__name{
-//                  white-space: nowrap;
-//                  text-overflow: ellipsis;
-//                  overflow: hidden;
-//              }
-//              &__header__name__ingredient{
-//                      white-space: nowrap;
-//                      text-overflow: ellipsis;
-//                      overflow: hidden;
-//                  }   
-//          }
-//      }
-     
      
      

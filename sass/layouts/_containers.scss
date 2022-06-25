@@ -13,45 +13,36 @@
     margin-top: -65px;
     border-radius: 30px 30px 0 0;
     background-color: #f5f5f5;
-    z-index: 1;  
-    
+    z-index: 1;     
 }
 
 .menu__container__header{
     display: flex;
     justify-content: space-between;
-}
-
-.menu__container__header__title{
-    font-family: "Shrikhand", sans-serif;
-    font-size: 30px;
-    padding: 5px ;  
-}
-
-
-@media only screen and (max-width:992px) and (min-width:768px){
-
-    .menu__container__header{
-        justify-content: space-around;
-       
-    }  
-    .menu__container__header__title{
-        font-size: 34px;
-        margin-left: 30px;
+    @media only screen and (max-width:992px) and (min-width:768px){
+        justify-content: space-around;   
+    } 
+    @media only screen and (min-width:992px){
+        justify-content: center;
     }
-
+        &__title{
+            font-family: "Shrikhand", sans-serif;
+            font-size: 30px;
+            padding: 5px ; 
+            @media only screen and (max-width:992px) and (min-width:768px){
+                font-size: 34px;
+                margin-left: 30px;
+            } 
+            @media only screen and (min-width:992px){
+                 font-size: 34px;
+                margin-right: 10%;
+            } 
+        }
 }
+
 
 @media only screen and (min-width:992px){
  
-    .menu__container__header{
-        justify-content: center;
-    }  
-    .menu__container__header__title{
-        font-size: 34px;
-        margin-right: 10%;
-    } 
-    
     .menus__container{
         display: flex;
         flex-direction: row;
